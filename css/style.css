@@ -21,7 +21,9 @@ form {
     gap: 10px;
 
     margin-top: 50px;
+    width: 300px;
 
+    border-radius: 10px;
     background-color: rgb(118, 187, 255);
     padding: 10px;
 
@@ -29,10 +31,15 @@ form {
     font-weight: bold;
 }
 
+form input {
+    width: 100%;
+}
+
 .dadosCadastrados {
     margin-top: 50px;
+    border-radius: 10px;
     background-color: rgb(118, 187, 255);
-    width: 700px;
+    width: 900px;
     padding: 10px;
 
     text-transform: uppercase;
@@ -40,7 +47,7 @@ form {
 
 .dadosCadastrados table {
     font-family: arial, sans-serif;
-    border-collapse: collapse;
+    border: 0;
     width: 100%;
 }  
 
@@ -53,6 +60,10 @@ td, th {
 
 td, tr {
     text-transform: initial;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
 }
   
 tr:nth-child(even) {
